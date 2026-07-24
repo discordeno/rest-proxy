@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.17.1",
   "scripts": {
     "build": "tsc",
     "start:dev": "yarn exec node -r dotenv/config dist/server.js",
