@@ -144,7 +144,8 @@ jobs:
           push: false
           tags: 'discordeno/app-rest-passthrough:latest, discordeno/app-rest-passthrough:v${{ needs.app-version.outputs.version }}'
           # linux/s390x stuck at yarn install, remove it for now
-          platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le
+          # linux/ppc64le not supported by node:22-alpine (no manifest exists)
+          platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8
           target: runner
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
@@ -184,5 +185,6 @@ jobs:
           push: true
           tags: 'ghcr.io/discordeno/app-rest-passthrough:latest, ghcr.io/discordeno/app-rest-passthrough:v${{ needs.app-version.outputs.version }}'
           # linux/s390x stuck at yarn install, remove it for now
-          platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le
+          # linux/ppc64le not supported by node:22-alpine (no manifest exists)
+          platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8
           target: runner
