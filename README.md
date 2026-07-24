@@ -9,7 +9,9 @@ Before running the app, make sure you have the following prerequisites installed
 
 ## Getting Started
 
-1. `docker pull ghcr.io/discordeno/app-rest-passthrough:latest`
+<!-- I am not sure we have this docker image, for now we comment this out -->
+<!-- 1. `docker pull ghcr.io/discordeno/app-rest-passthrough:latest` -->
+1. Build the image from the dockerfile in the repo
 2. Create an environment file (you can use `-e` flags instead), example: `./my-env`
 3. `docker run --detach --env-file ./my-env -p 8000:8000 --name dd-rest discordeno/app-rest-passthrough`
 
