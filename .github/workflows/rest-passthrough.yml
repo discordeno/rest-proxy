@@ -41,8 +41,6 @@ jobs:
       - name: get-npm-version
         id: package-version
         uses: martinbeentjes/npm-get-version-action@v1.3.1
-        with:
-          path: docker-apps/rest-passthrough
 
   build:
     name: Build docker image
@@ -69,7 +67,6 @@ jobs:
         with:
           push: false
           tags: 'discordeno/app-rest-passthrough:latest, discordeno/app-rest-passthrough:v${{ needs.app-version.outputs.version }}'
-          context: docker-apps/rest-passthrough
           target: runner
           outputs: type=docker,dest=/tmp/rest-passthrough-image.tar
           cache-from: type=local,src=/tmp/.buildx-cache
@@ -144,7 +141,6 @@ jobs:
       - name: Build Docker image
         uses: docker/build-push-action@v7
         with:
-          context: docker-apps/rest-passthrough
           push: false
           tags: 'discordeno/app-rest-passthrough:latest, discordeno/app-rest-passthrough:v${{ needs.app-version.outputs.version }}'
           # linux/s390x stuck at yarn install, remove it for now
@@ -185,7 +181,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v7
         with:
-          context: docker-apps/rest-passthrough
           push: true
           tags: 'ghcr.io/discordeno/app-rest-passthrough:latest, ghcr.io/discordeno/app-rest-passthrough:v${{ needs.app-version.outputs.version }}'
           # linux/s390x stuck at yarn install, remove it for now
