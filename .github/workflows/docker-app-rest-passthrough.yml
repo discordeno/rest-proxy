@@ -5,9 +5,6 @@ on:
   push:
     branches:
       - 'main'
-    paths:
-      - '.github/workflows/docker-app-rest-passthrough.yml'
-      - 'docker-apps/rest-passthrough/**'
   pull_request:
   merge_group:
   schedule:
