@@ -127,16 +127,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/multipart@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "@fastify/multipart@npm:10.1.0"
+"@fastify/multipart@npm:^10.1.1":
+  version: 10.1.1
+  resolution: "@fastify/multipart@npm:10.1.1"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@fastify/deepmerge": "npm:^3.0.0"
     "@fastify/error": "npm:^4.0.0"
     fastify-plugin: "npm:^6.0.0"
     secure-json-parse: "npm:^4.0.0"
-  checksum: 10c0/c305393cb53f673c8a12cd7439a1028dda7ae9f4c7c75aba45f3721df5f746651e2670bcd1b5c84544e6bc032b6f8251203c4a8f0153983e992d56dc97c170a1
+  checksum: 10c0/25b551a0794798b05af689f2cd5532ba85d9e4f19c40e09f84db5013826d939ee0c0ec3f2fbcbb130d1d84d9f729b84d692aafd0bc34931e87f282eb85465272
   languageName: node
   linkType: hard
 
@@ -1138,7 +1138,7 @@ __metadata:
     "@discordeno/rest": "npm:21.0.0"
     "@fastify/env": "npm:^7.0.0"
     "@fastify/helmet": "npm:^13.1.0"
-    "@fastify/multipart": "npm:^10.1.0"
+    "@fastify/multipart": "npm:^10.1.1"
     "@favware/cliff-jumper": "npm:^6.1.0"
     "@types/node": "npm:^26.1.2"
     dotenv: "npm:^17.4.2"
