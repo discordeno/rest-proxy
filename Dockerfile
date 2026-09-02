@@ -1,5 +1,5 @@
 # build only with the platform of the host machine, since it only uses for dev purposes
-FROM --platform=$BUILDPLATFORM node:22-alpine AS deps
+FROM --platform=$BUILDPLATFORM node:26-alpine AS deps
 WORKDIR /app
 # copy necessary for install dependencies
 COPY package.json yarn.lock .yarnrc.yml ./
@@ -8,7 +8,7 @@ COPY ./.yarn/releases  ./.yarn/releases
 RUN yarn install --immutable
 
 # build only with the platform of the host machine, since we just need its files
-FROM --platform=$BUILDPLATFORM node:22-alpine AS builder
+FROM --platform=$BUILDPLATFORM node:26-alpine AS builder
 # copy the dependencies (node_modules) from the deps image
 COPY --from=deps /app /app
 WORKDIR /app
@@ -19,7 +19,7 @@ COPY tsconfig.json ./
 # compile the files
 RUN yarn build
 
-FROM node:22-alpine AS runner
+FROM node:26-alpine AS runner
 # copy the compiled files from the builder image
 COPY --from=builder /app/dist /app/dist
 # copy the dependencies from the deps image
