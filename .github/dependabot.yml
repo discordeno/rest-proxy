@@ -4,7 +4,20 @@ updates:
     directory: '/'
     schedule:
       interval: 'monthly'
+    groups:
+      js-bumps:
+        patterns: ['*']
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: 'monthly'
+    groups:
+      ci-bumps:
+        patterns: ['*']
+  - package-ecosystem: 'docker'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    groups:
+      docker-bumps:
+        patterns: ['*']
