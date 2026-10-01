@@ -127,16 +127,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/multipart@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "@fastify/multipart@npm:10.1.1"
+"@fastify/multipart@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "@fastify/multipart@npm:10.1.2"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@fastify/deepmerge": "npm:^3.0.0"
     "@fastify/error": "npm:^4.0.0"
     fastify-plugin: "npm:^6.0.0"
     secure-json-parse: "npm:^4.0.0"
-  checksum: 10c0/25b551a0794798b05af689f2cd5532ba85d9e4f19c40e09f84db5013826d939ee0c0ec3f2fbcbb130d1d84d9f729b84d692aafd0bc34931e87f282eb85465272
+  checksum: 10c0/af77f06038df12ba4db84ec967543bac3e788b1c61f87f6528c07fb4b5422a7a957af0f942cacb51671fc2879c540d61cb59e1bf5c216107f4a9efebeaaea316
   languageName: node
   linkType: hard
 
@@ -330,12 +330,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^26.4.0":
-  version: 26.4.0
-  resolution: "@types/node@npm:26.4.0"
+"@types/node@npm:^26.6.3":
+  version: 26.6.3
+  resolution: "@types/node@npm:26.6.3"
   dependencies:
-    undici-types: "npm:~8.3.0"
-  checksum: 10c0/e6fc94ea3b58fb8040b38c465dec1c53c1fd9d2c092c81f699d28799726baf59f12e1600318e79e8e6f985bb919dab6ae820180b942b8e38c51acaad63e8aada
+    undici-types: "npm:~8.9.0"
+  checksum: 10c0/51070287167d157d246a5ad83e6ead93aa310bbd9cc880ecd1f244a00c2a31491620f997fbbb6ba4ce164388694827999ec68c1d16c3fb64c1037056e64613c7
   languageName: node
   linkType: hard
 
@@ -630,10 +630,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^17.4.2":
-  version: 17.4.2
-  resolution: "dotenv@npm:17.4.2"
-  checksum: 10c0/164f8e77a646c8446867d5b588d26ea6005c8ea7c5eb41cf926f6113d23f2191355f6e0cfd95ea9bab98394a5b0a3f1e51a8399711b666fe55cc7b0bd745f942
+"dotenv@npm:^18.0.4":
+  version: 18.0.4
+  resolution: "dotenv@npm:18.0.4"
+  bin:
+    dotenv: dist/index.cjs
+  checksum: 10c0/33be95df15269c0f1106da53b97bf8dd2ad17cec34aaa9e05ea1e97135195d50a9fbf0cdcac27a736b1dcd20575b2bfdea2287a5c86bf950430eb45de7ec4eda
   languageName: node
   linkType: hard
 
@@ -752,9 +754,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify@npm:^5.12.1":
-  version: 5.12.1
-  resolution: "fastify@npm:5.12.1"
+"fastify@npm:^5.12.5":
+  version: 5.12.5
+  resolution: "fastify@npm:5.12.5"
   dependencies:
     "@fastify/ajv-compiler": "npm:^4.0.5"
     "@fastify/error": "npm:^4.0.0"
@@ -771,7 +773,7 @@ __metadata:
     secure-json-parse: "npm:^4.0.0"
     semver: "npm:^7.6.0"
     toad-cache: "npm:^3.7.0"
-  checksum: 10c0/07e2219db3d7d522519fe16bfefa1768d3bbcb80a161762131db7315812af3f7a4cd131358985a9aeb84ab24c069a362ec3ef592a3a29eb4fa3446e77bbf6678
+  checksum: 10c0/ed18ec344f8a007fb6aea1ad25924076334fab53f2403178d1db56e1f80a5da0f3db4c3a309ef1ae834fc3f20be2444dcc746ce3944093f95e827f66b1e2fbd5
   languageName: node
   linkType: hard
 
@@ -1145,11 +1147,11 @@ __metadata:
     "@discordeno/rest": "npm:21.0.0"
     "@fastify/env": "npm:^7.0.0"
     "@fastify/helmet": "npm:^13.1.1"
-    "@fastify/multipart": "npm:^10.1.1"
+    "@fastify/multipart": "npm:^10.1.2"
     "@favware/cliff-jumper": "npm:^6.1.0"
-    "@types/node": "npm:^26.4.0"
-    dotenv: "npm:^17.4.2"
-    fastify: "npm:^5.12.1"
+    "@types/node": "npm:^26.6.3"
+    dotenv: "npm:^18.0.4"
+    fastify: "npm:^5.12.5"
     typescript: "npm:^7.0.2"
   languageName: unknown
   linkType: soft
@@ -1452,10 +1454,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~8.3.0":
-  version: 8.3.0
-  resolution: "undici-types@npm:8.3.0"
-  checksum: 10c0/c8aa7e2fbebfce519654dafadc0ece59be888d2ccaf180fb4495da875e7b536d2456345c384069c7e6f3e9c9ab7435f074957da306f142343eee86ff8048855a
+"undici-types@npm:~8.9.0":
+  version: 8.9.0
+  resolution: "undici-types@npm:8.9.0"
+  checksum: 10c0/51c712c20c087368f62c6fc0f2bc49fa76bfe5dec28ff01584bb677ff29b0622569783c02d43e151143808c48c0503f804093bd2c491b10f2a830138034cb451
   languageName: node
   linkType: hard
 
